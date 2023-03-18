@@ -1,0 +1,155 @@
+.productsHeading{
+    margin: 2vmax auto;
+    width: 60vmax;
+    padding: 2vmax;
+    color: rgb(135, 133, 133);
+    font-size: 3vmax;
+    text-align: center;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.productCard{
+    background-color: rgb(249, 243, 243);
+    width: 60vmax;
+    margin: 1vmax;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.productCard:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.first{
+    width: 100%;
+    /* margin: 1vmax; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2vmax;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+.first>img{
+    width: 15vmax;
+    /* margin: 2vmax; */
+}
+.second{
+    width: 100%;
+    /* margin: 1vmax; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2vmax;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+.second-1>h2{
+    color: black;
+    font-size:2vmax;
+    font-weight: 600;
+}
+.second-1>p{
+    color: rgb(54,54,54);
+    font-size:0.8vmax;
+    font-weight: 200;
+    font-family: cursive;
+}
+.second-2{
+    width: 100%;
+}
+.second-2>h1{
+    color: black;
+    margin-top: 10px;
+    font-size:2.5vmax;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium';
+}
+.second-2-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-2-1-1>button{
+    border: none;
+    background-color: rgba(43, 37, 37, 0.7);
+    padding: 2px;
+    width: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.6vmax;
+}
+.second-2-1-1>button:hover{
+    background-color: black;
+}
+.second-2-1-1>input{
+    color: black;
+    padding: 2px;
+    width: 60px;
+    text-align: center;
+    outline: none;
+    font-size: 1.5vmax;
+}
+.greenColor{
+    color: green;
+}
+.redColor{
+    color: red;
+}
+.second-2-1>button{
+    border: none;
+    background-color: tomato;
+    padding: 0.4vmax 2vmax;
+    cursor: pointer;
+    color: white;
+    font-size:1.1vmax;
+    border-radius: 25px;
+    margin-top: 1vmax;
+    outline: none;
+}
+.second-2-1>button:hover{
+    transition: all 0.5s;
+    background-color: brown;
+    transform: scale(1.1);
+}
+.second-2>p{
+    border-top: 1px solid rgb(26, 25, 25);
+    border-bottom: 1px solid rgb(26, 25, 25);
+    padding: 1vmax 0;
+    color: rgb(41, 40, 40);
+    font-size:1.2vmax;
+    margin: 1vmax 0;
+}
+.filter{
+    width:60vmax;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .productsHeading{
+        width: 40vmax;
+    }
+    .productCard{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .frist{
+        width: 80%;
+    }
+    .second{
+        width: 80%;
+    }
+    .filter{
+        width: 38vmax;
+    }
+  }
+

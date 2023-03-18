@@ -1,0 +1,227 @@
+.LoginSignUpContainer {
+  background-image: url("./login.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  min-height: 90vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forgotPasswordContainer,.resetPasswordContainer,.updateProfileContainer,.updatePasswordContainer {
+  background-image: url("./login.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  left: 0;
+}
+
+.LoginSignUpBox ,.forgotPasswordBox,.resetPasswordBox, .updateProfileBox,.updatePasswordBox{
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 5px;
+  background-color: rgb(148, 173, 177);
+  width: 400px;
+  height: 500px;
+  box-sizing: border-box;
+  overflow: hidden; */
+  width: 400px;
+  height: 500px;
+  background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.forgotPasswordHeading,.resetPasswordHeading,.updateProfileHeading ,.updatePasswordHeading{
+  margin: auto;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.664);
+  font-size:18px;
+  font-weight: 300;
+  padding: 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.205);
+  width: 50%;
+}
+.login_signUp_toggle {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.login_signUp_toggle>p {
+  height: 60px;
+  margin: 1px;
+  color: black;
+  font-size: 15px;
+  transition: all 0.5s;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.login_signUp_toggle>p:hover {
+  color: brown;
+}
+
+.LoginSignUpBox>div>button {
+  background-color: brown;
+  height: 3px;
+  width: 50%;
+  border: none;
+  transition: all 0.5s;
+}
+
+.loginForm,
+.signUpForm,
+.forgotPasswordForm,
+.resetPasswordForm,
+.updateProfileForm,
+.updatePasswordForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px;
+  justify-content: space-evenly;
+  margin: auto;
+  height: 80%;
+  transition: all 0.5s;
+}
+.signUpForm {
+  transform: translateY(-100%) translateX(-100vmax);
+}
+
+.loginForm>div,
+.signUpForm>div,
+.forgotPasswordForm>div,
+.resetPasswordForm>div,
+.updateProfileForm>div,
+.updatePasswordForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.loginForm>div>input,
+.signUpForm>div>input,
+.forgotPasswordForm>div>input,
+.resetPasswordForm > div > input,
+.updateProfileForm>div>input,
+.updatePasswordForm > div>input {
+  /* padding: 1vmax 4vmax; */
+  padding: 8px 50px;
+  padding-right: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1.5px solid rgba(67, 64, 64, 0.267);
+  border-radius: 5px;
+  font-family: cursive;
+  color: rgba(0, 0, 0, 0.623);
+  outline: none;
+}
+
+.loginForm>div>svg,
+.signUpForm>div>svg,
+.forgotPasswordForm>div>svg,
+.resetPasswordForm > div > svg,
+.updateProfileForm>div>svg ,
+.updatePasswordForm > div>svg{
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+.loginForm>a {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+
+#registerImage>img,#updateProfileImage > img{
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+#registerImage>input,#updateProfileImage > input {
+  display: flex;
+  padding: 0%;
+}
+#registerImage>input::file-selector-button ,#updateProfileImage > input::file-selector-button{
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  height: 35px;
+  border: none;
+  margin: 0%;
+  font-family: cursive;
+  padding: 0 1vmax;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+#registerImage>input::file-selector-button:hover,#updateProfileImage > input::file-selector-button:hover {
+  background-color: rgb(170, 195, 197);
+  color: white;
+}
+
+.loginBtn,
+.signUpBtn,
+.forgotPasswordBtn,
+.resetPasswordBtn,
+.updateProfileBtn,
+.updatePasswordBtn
+ {
+  border: none;
+  background-color: brown;
+  color: black;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+.loginBtn:hover,
+.signUpBtn:hover,
+.forgotPasswordBtn:hover,
+.resetPasswordBtn:hover,
+.updateProfileBtn:hover,
+.updatePasswordBtn:hover{
+  color: white;
+}
+
+.shiftToLeft {
+  transform: translateX(-100%);
+}
+
+.shiftToNeutral {
+  transform: translateX(0%);
+}
+
+.shiftToNeutralForm {
+  transform: translateX(0%) translateY(-100%);
+}
+
+.shiftToRight {
+  transform: translateX(100%);
+}

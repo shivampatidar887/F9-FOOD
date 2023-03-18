@@ -1,0 +1,144 @@
+.profileContainer {
+  background-image: url("./login.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  min-height: 90vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-box {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 5px;
+  background-color: rgb(148, 173, 177);
+  width: 80%;
+  max-height: 75vh;
+  min-height: 50vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-1 {
+  display: flex;
+  width: 40vmax;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vmax;
+}
+
+.profile-2 {
+  display: flex;
+  width: 50%;
+  max-width: 100%;
+  flex-direction: column;
+}
+.profile-1>img{
+  margin: 2vmax;
+  width: 15vmax;
+  height: 15vmax;
+  border-radius: 100%;
+  border: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: all 0.5s;
+}
+.profile-1>img:hover{
+  transform: scale(1.05);
+}
+.profile-1>a {
+  border: none;
+  background-color: black;
+  font-size:1vmax;
+  color: white;
+  text-decoration: none;
+  padding: 0.5vmax 1vmax;
+  width: 40%;
+  margin: 4vmax;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.profile-1>a:hover {
+  background-color: brown;
+  color: black;
+}
+
+.profile-2>div:first-child {
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 4vmax;
+  height: 24vmax;
+  box-sizing: border-box;
+}
+.profile-2>div:first-child>div{
+  margin: 2vmax 0vmax;
+}
+.profile-2>div:first-child>div>h4 {
+  color: black;
+  font: 400 1.2vmax "Roboto";
+}
+
+.profile-2>div:first-child>div>p {
+  color: rgba(0, 0, 0, 0.418);
+  font: 400 1vmax cursive;
+  margin: 0.2vmax;
+}
+
+.profile-2>div:last-child{
+  justify-content: space-evenly;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding:0vmax 4vmax;
+  box-sizing: border-box;
+}
+
+.profile-2>div:last-child>a {
+  border: none;
+  background-color: black;
+  font-size:1vmax;
+  color: white;
+  width: 50%;
+  text-decoration: none;
+  padding: 0.5vmax 1vmax;
+  text-align: center;
+  transition: all 0.5s;
+  margin: 1vmax 0;
+}
+
+.profile-2>div:last-child>a:hover {
+  background-color: brown;
+  color: black;
+}
+@media screen and (max-width: 650px) {
+  .profile-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-1 {
+    width: 100%;
+    padding:0vmax;
+  }
+  .profile-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-2>div:last-child>a {
+    width: 100%;
+    padding: 0.5vmax 5vmax;
+  
+  }
+  .profile-2>div:first-child {
+    padding: 0vmax;
+  }
+  
+}

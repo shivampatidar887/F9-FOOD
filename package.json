@@ -1,0 +1,34 @@
+{
+  "name": "f9-food",
+  "version": "1.0.0",
+  "description": "You can Order Food online from our restorant.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "both": "concurrently \"npm run client\" \"npm run  server\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/lab": "^4.0.0-alpha.61",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cloudinary": "^1.35.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "http-proxy-middleware": "^2.0.6",
+    "jsonwebtoken": "^9.0.0",
+    "jwt-decode": "^3.1.2",
+    "mongoose": "^5.13.5",
+    "nodemailer": "^6.9.1",
+    "npm": "^9.6.2",
+    "react-router-dom": "^6.9.0",
+    "stripe": "^11.13.0",
+    "validator": "^13.9.0"
+  }
+}

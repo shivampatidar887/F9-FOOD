@@ -1,0 +1,93 @@
+.transparent-navbar {
+    /* background-color: transparent !important; */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+.nav-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px 0.5vmax;
+    padding:0 0.6vmax;
+    border-radius: 20px;
+    cursor: pointer
+}
+/* .nav-item:hover{
+    background-color: brown;
+    transition: all 0.5s;  
+} */
+.nav-item>a{
+    font-size: 1.1vmax;
+    color: white !important;
+}
+#login-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    margin-right:20px;
+    font-size:45px;
+    color:brown;
+    background-clip: text;
+    cursor: pointer;
+    -webkit-background-clip: text;
+}
+#cart-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    margin-left: 6vmax;
+    font-size:36px;
+}
+#login-logo>h4{
+    font-size: 23px;
+    margin: 7px;
+}
+
+.container-fluid>button{
+    background-color:brown;
+}
+.speedDial{
+    position: fixed;
+    left: 1vmax;
+    top: 0.5vmax;
+}
+.speedDialIcon{
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    outline: none;
+}
+@media screen and (max-width: 991.5px) {
+    .nav-item{
+        width: 30%;
+        text-align: center;
+    }
+    .nav-item>a{
+        font-size: 1.4vmax;
+    }
+    #login-logo{
+        font-size: 6vmax;
+    }
+    #cart-logo{
+        margin-left: 10vmax;
+    }
+    .container-fluid>button{
+        background-color:brown;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    /* .container-fluid>a>h4{
+        margin: 8px;
+    } */
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1vmax;
+}
+  }

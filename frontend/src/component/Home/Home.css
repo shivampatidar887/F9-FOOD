@@ -1,0 +1,509 @@
+/* 
+  .bo {
+    background-image: url('./Images/pexels-quark-studio-3201922\ \(2\).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    height: 100vmin;
+  }
+  
+  .bg-img-home{
+    display: block;
+    position: absolute;
+    margin: auto;
+    height: 100vmin;
+    width: 100vmin;
+}
+.circle{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    color: brown;
+    font-size: 2.5vmax;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    animation: anim 20s linear infinite;
+}
+@keyframes anim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.text span{
+    position: absolute;
+    left: 50%;
+    font-size:17.4px ;
+    transform-origin: 0 100px;
+}
+
+ .banner>p{
+    font-size: 2vmax;
+    font-weight: bold;
+    color: rgb(3, 50, 68);
+    font-family: 'Courier New', Courier, monospace;
+} 
+/* .bo>a>button{
+    margin-bottom: 190px;
+    cursor: pointer;
+    background-color: rgb(149, 170, 170);
+    border: 1px solid white;
+    padding: 10px;
+    transition: all 0.5s;
+    width: 120px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.bo>a>button:hover{
+    background-color: brown;
+    color: azure;
+} */
+/* .bo>a>button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-bottom: 10vmax;
+} */
+/* 
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #f35757, #ea771a, #f0ee67, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+} */
+/* 
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+} */
+/* 
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+} */
+/* 
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+} */
+/* @import url('https://fonts.cdnfonts.com/css/abraham'); */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Ubuntu:wght@300&display=swap');
+.homeHeading{
+    text-align: center;
+    font-size: 1.4vmax;
+    border-bottom: 1px solid rgb(23, 23, 23);
+    width: 20vmax;
+    padding: 1vmax;
+    margin: 4vmax auto;
+    color: rgb(18, 18, 18);
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin: 2vmax 0vmax; */
+    margin-bottom: 3.5vmax;
+}
+.box{
+    background-color: rgb(149, 170, 170);
+    margin: 1vmax;
+    display: flex;
+    flex-direction: column;
+    width: 20vmax;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid rgb(108, 108, 3);
+    text-decoration: none;
+    
+}
+.box:hover{
+    background-color: white;
+    transition: all .5s;
+    transform: translateY(-0.5vmax);
+    box-shadow: 0 0 15px rgba(15,15,15,0.4);
+}
+.box>img{
+    margin: 1vmax;
+    width: 50%;
+}
+.box>p{
+    margin: 1vmax;
+    font-weight: bold;
+    font-size: 1.5vmax;
+    color: rgb(74, 73, 73);
+}
+
+
+.one{
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    padding: 1vmax 4vmax;
+    margin-bottom: 50px;
+}
+.first>h1{
+    font-family: 'Abraham';
+    font-weight: 600;
+    font-size: 3vmax;
+    margin: 0vmax 1vmax;
+}
+.first>h2{
+    font-family: 'Abraham';
+    font-weight: 600;
+    font-size: 3vmax;
+    margin: 0vmax 1vmax;
+}
+.first-1{
+    display: flex;
+    flex-direction: row;
+    margin: 1.5vmax 1vmax;
+}
+.first-1>img{
+    width: 3vmax;
+    height: 3vmax;
+    border-radius: 100%;
+}
+.first-1>p{
+    font-size: 1vmax;
+    font-weight: 600;
+    color: rgb(50, 49, 49);
+    font-family:'Ubuntu';
+    margin: 0vmax 1vmax;
+}
+.first-2>a>button{
+    margin:0.5vmax;
+    padding: 1vmax;
+    width: 12vmax;
+    border-radius: 30px;
+    font-size: 1vmax;
+    border: none;
+    outline: none;
+    background: rgb(253, 112, 69);
+    cursor: pointer;
+}
+
+.second{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-1
+{
+position: relative;
+width: 320px;
+height: 350px;
+background-color: #fff;
+overflow: hidden;
+}
+.box-1::before{
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 320px;
+height: 320px;
+background: transparent;
+border-radius: 50%;
+z-index: 1;
+box-shadow: 0 100px 0 40px #fff;
+}
+.box-1 .circle-2{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 320px;
+height: 320px;
+background: rgb(242, 154, 128);
+overflow: hidden;
+border-radius: 50%;
+}
+.box-1 .circle-2 img,
+.box-1 img{
+position: absolute;
+bottom: 0;
+left: 50%;
+width: 320px;
+height: 350px;
+transform: translateX(-50%);
+}
+
+.third{
+    padding: 0vmax  5vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.in-third{
+    display: flex;
+    flex-direction: row;
+    margin: 2vmax 0vmax;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#logo-3{
+font-size: 2vmax;
+margin:0vmax 1vmax;
+}
+.in-third .in-3 h4{
+    font-family: 'Abraham';
+    font-weight: 600;
+    font-size: 1.2vmax;
+    
+}
+.in-third .in-3 p{
+    font-size: 0.8vmax;
+    font-weight: 600;
+    color: rgb(50, 49, 49);
+    font-family:'Ubuntu';
+}
+.two{
+    height: 23vmax;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.two::before{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(45deg,#f0721e,#ef5c3c);
+    border-radius: 50% 50% 0 0/100% 100% 0 0;
+    transform: scaleX(1.5);
+}
+
+.two-1{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    width: 50%;
+}
+.two-1>img{
+    width: 72%;
+    margin-bottom: 1vmax;
+}
+.two-2{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    z-index: 2;
+    align-items:center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+.two-2>h2{
+    font-family: 'Abraham';
+    font-weight: 400;
+    font-size: 2.5vmax;
+    margin:1vmax;
+}
+.two-2>img{
+    position: relative;
+    z-index: 2;
+    width: 24%;
+}
+
+
+@media screen and (max-width: 890px){
+    .one{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 95vh;
+        margin-bottom: 0px;
+    }
+    .first>h1{
+        font-size: 3.5vmax;
+        margin: 1vmax 1vmax;
+        
+    }
+    .first>h2{
+        font-size: 3.5vmax;
+        margin: 1vmax 1vmax;
+        
+    }
+    .first-1{
+        display: flex;
+        flex-direction: row;
+        margin: 1.5vmax 1vmax;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    .first-1>img{
+        width: 5vmax;
+        height: 5vmax;
+    }
+    .first-1>p{
+        font-size: 1.5vmax;
+        margin: 0vmax 2vmax;
+    }
+    .first-2>a>button{
+        margin:1vmax;
+        padding: 1vmax;
+        width: 15vmax;
+        border-radius: 30px;
+        font-size: 1.5vmax;
+    }
+    .box-1
+    {
+    width: 180px;
+    height: 200px;
+    }
+    .box-1::before{
+    width: 180px;
+    height: 180px;
+    
+    }
+    .box-1 .circle-2{
+    width: 180px;
+    height: 180px;
+    }
+    .box-1 .circle-2 img,
+    .box-1 img{
+    width: 180px;
+    height: 200px;
+    }
+    .third{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .in-third{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    #logo-3{
+        font-size: 3vmax;
+        margin:0vmax 2vmax;
+        }
+        .in-third .in-3 h4{
+            font-size: 1.5vmax;
+        }
+        .in-third .in-3 p{
+            font-size: 1vmax;
+        }
+.two{
+    height: 33vmax;
+}
+}
+    
+    @media screen and (max-width: 600px){
+        .one{
+            padding: 1vmax 2vmax;
+            display: flex;
+            height: 88vh;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        .first>h1{
+            font-size: 3.5vmax;
+            margin: 1vmax 0vmax;
+        }
+    .first-1{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .first-2>a>button{
+        margin:0.5vmax;
+        padding: 0.8vmax;
+        width: 12vmax;
+        border-radius: 30px;
+        font-size: 1.2vmax;
+    }
+    .second{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .third{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .in-third{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    #logo-3{
+        font-size: 3vmax;
+        margin:0vmax 2vmax;
+        }
+        .in-third .in-3 h4{
+            font-size: 1.5vmax;
+        }
+        .in-third .in-3 p{
+            font-size: 1vmax;
+        }
+    .two-1{
+        width: 0;
+        height: 0;
+    }
+    .two{
+        height: 20vmax;
+    }
+    .two-2>h2{
+        font-size: 2vmax;
+    }
+    }
+    

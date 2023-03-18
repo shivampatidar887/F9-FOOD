@@ -1,0 +1,35 @@
+footer{
+    /* margin-top: 10vmax; */
+    padding : 0.5vmax;
+    background-color:black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.leftfooter{
+    color: brown;
+    width:30%;
+    font-weight: bold;
+    text-align: center;
+}
+p{
+    font-size: 1vmax;
+}
+
+.midfooter{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.midfooter >h1{
+    font-size: 2vmax;
+    color: aqua;
+}
+.rightfooter{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
