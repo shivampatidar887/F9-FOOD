@@ -7,3 +7,18 @@
 ![Screenshot (28)](https://user-images.githubusercontent.com/110610536/227204174-8ef29b94-f559-4131-8664-97e378ca2a0d.png)
 ![Screenshot (31)](https://user-images.githubusercontent.com/110610536/227204175-560025d4-6812-4847-a9e3-84432f69e244.png)
 ![Screenshot (32)](https://user-images.githubusercontent.com/110610536/227204176-91f8930c-7189-4332-9874-9a34424063d5.png)
+
+
+## Usage
+
+### Install dependencies
+
+```
+npm install
+```
+
+### Run Both React Dev Server and Backend Server using
+
+```
+npm run dev
+```
